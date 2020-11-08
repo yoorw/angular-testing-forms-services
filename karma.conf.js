@@ -25,7 +25,10 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['Chrome', 'PhantomJS'],
+    phantomJsLauncher: {
+      exitOnResourceError: true
+    },
     singleRun: false,
     restartOnFileChange: true
   });
