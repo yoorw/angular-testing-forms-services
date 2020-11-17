@@ -5,6 +5,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { DynamicQuestionComponent } from './dynamic-question/dynamic-question.component';
+import { FormService } from './form.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { DynamicQuestionComponent } from './dynamic-question/dynamic-question.co
     BrowserModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [FormService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
