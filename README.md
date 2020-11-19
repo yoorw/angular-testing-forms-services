@@ -1,6 +1,12 @@
 # Ng2Test
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6 and is aimed at learning TDD with Angular while building Forms and Services.
+
+This is a tutorial followed by: 
+1) https://semaphoreci.com/community/tutorials/setting-up-angular-2-with-webpack
+2) https://semaphoreci.com/community/tutorials/testing-components-in-angular-2-with-jasmine
+3) https://semaphoreci.com/community/tutorials/testing-services-in-angular-2
+
 
 ## Development server
 
