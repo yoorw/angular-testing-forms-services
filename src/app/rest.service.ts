@@ -14,13 +14,22 @@ export class RestService {
 
   getForms() {
     return this.http.get('api/forms').pipe(
-      map((response) => {
-        if(response.ok) {
-          response.json() as FormData[];
+      map((res: Response) => {
+        // return res.json() as FormData[] || {};
+
+        if(res.ok) {
+          return res.json() as FormData[] || {};
         } else {
-          return this.logError(response);
+          return this.logError(res);
         }
       })
+      // map((response) => {
+      //   // if(response.ok) {
+      //     response.json() as FormData[];
+      //   // } else {
+      //     // return this.logError(response);
+      //   // }
+      // })
     );
   }
 
