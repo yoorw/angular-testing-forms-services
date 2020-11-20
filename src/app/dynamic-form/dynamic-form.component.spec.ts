@@ -34,7 +34,7 @@ describe('DynamicFormComponent', () => {
   });
 
   it('should create a FormGroup comprised of FormControls', () => {
-    component.ngOnInit();
+    component.ngOnChanges();
     expect(component.formGroup instanceof FormGroup).toBe(true);
   });
 
@@ -53,7 +53,7 @@ describe('DynamicFormComponent', () => {
         required: true
       }
     ];
-    component.ngOnInit();
+    component.ngOnChanges();
 
     expect(Object.keys(component.formGroup.controls)).toEqual([
       'first', 'second'
@@ -75,7 +75,7 @@ describe('DynamicFormComponent', () => {
         required: true
       }
     ];
-    component.ngOnInit();
+    component.ngOnChanges();
 
     component.formGroup.controls['first'].setValue('pizza');
     component.submit();
